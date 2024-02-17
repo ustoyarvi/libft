@@ -6,7 +6,7 @@
 /*   By: dsedlets <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:22:21 by dsedlets          #+#    #+#             */
-/*   Updated: 2024/02/04 21:18:52 by dsedlets         ###   ########.fr       */
+/*   Updated: 2024/02/17 19:01:55 by dsedlets         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char	*p_src;
 	size_t			i;
 
-	*p_dest = (unsigned char *)dest;
-	*p_src = (unsigned char *)src;
+	p_dest = (unsigned char *)dest;
+	p_src = (unsigned char *)src;
 	i = 0;
 	while (i < n)
 	{
@@ -34,13 +34,13 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 
 int main(void)
 {
-	char a1[] = "1234567";
+	char a1[] = "1234567890";
 	char b1[] = "zrr4422sdffs";
 	char a2[] = "1234567890";
 	char b2[] = "zrr4422sdffs";
 	
-	printf("%s\n", (char *)ft_memcpy(a1, b1, 20));
-	printf("%s\n", (char *)memcpy(a2, b2, 9));
+	printf("%s\n", (char *)ft_memcpy(a1, b1, 11));
+	printf("%s\n", (char *)memcpy(a2, b2, 11));
 	return 0;
 }
 */

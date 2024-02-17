@@ -6,7 +6,7 @@
 /*   By: dsedlets <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/12 20:47:33 by dsedlets          #+#    #+#             */
-/*   Updated: 2024/02/12 23:13:37 by dsedlets         ###   ########.fr       */
+/*   Updated: 2024/02/17 22:49:57 by dsedlets         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ char	*ft_strchr(const char *s, int c)
 			return ((char *)&s[i]);
 		i++;
 	}
+	if (c == '\0')
+		return ((char *)&s[i]);
 	return (0);
 }
 /*
@@ -29,8 +31,8 @@ char	*ft_strchr(const char *s, int c)
 
 int	main(void)
 {
-	const char s[] = "abcdefgh";
-	int	c = 'h';
+	const char s[] = "";
+	int	c = '\0';
 
 	printf("%p\n", (void *)ft_strchr(s, c));
 	printf("%p\n", (void *)strchr(s, c));
