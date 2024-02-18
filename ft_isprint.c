@@ -6,11 +6,11 @@
 /*   By: dsedlets <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/29 21:29:07 by dsedlets          #+#    #+#             */
-/*   Updated: 2024/01/29 21:36:03 by dsedlets         ###   ########.fr       */
+/*   Updated: 2024/02/18 23:16:31 by dsedlets         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(char c)
+int	ft_isprint(int c)
 {
 	return (c >= 32 && c <= 126);
 }

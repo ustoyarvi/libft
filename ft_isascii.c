@@ -6,11 +6,11 @@
 /*   By: dsedlets <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/29 21:20:04 by dsedlets          #+#    #+#             */
-/*   Updated: 2024/01/29 21:28:03 by dsedlets         ###   ########.fr       */
+/*   Updated: 2024/02/18 23:18:36 by dsedlets         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isascii(char c)
+int	ft_isascii(int c)
 {
 	return (c >= 0 && c <= 127);
 }
